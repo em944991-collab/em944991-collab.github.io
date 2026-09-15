@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ibraheem Nwihy — Graphic Designer creating visual identities, campaigns and digital experiences.">
+<meta name="description" content="Ibraheem Nwihy — Graphic Designer specializing in Branding, Social Media, Visual Design, and UI/UX.">
 <meta name="author" content="Ibraheem Nwihy">
 <meta name="theme-color" content="#f5f3ee">
 <title>Ibraheem Nwihy — Graphic Designer</title>
@@ -14,11 +14,10 @@
 
 <style>
 :root{
-  --bg:#f5f3ee;
-  --ink:#171717;
-  --muted:#6d6b66;
-  --line:#d9d5cc;
-  --card:#ebe8e0;
+--bg:#f5f3ee;
+--ink:#171717;
+--muted:#6d6b66;
+--line:#d9d5cc;
 }
 
 *{box-sizing:border-box}
@@ -26,427 +25,432 @@
 html{scroll-behavior:smooth}
 
 body{
-  margin:0;
-  background:var(--bg);
-  color:var(--ink);
-  font-family:"DM Sans",sans-serif;
+margin:0;
+background:var(--bg);
+color:var(--ink);
+font-family:"DM Sans",sans-serif;
 }
 
 a{
-  color:inherit;
-  text-decoration:none;
+color:inherit;
+text-decoration:none;
 }
 
 .wrap{
-  width:min(1180px,calc(100% - 48px));
-  margin:auto;
+width:min(1180px,calc(100% - 48px));
+margin:auto;
 }
 
 /* NAV */
+
 nav{
-  height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  border-bottom:1px solid var(--line);
+height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid var(--line);
 }
 
 .logo{
-  font-weight:700;
-  letter-spacing:.08em;
-  font-size:15px;
+font-weight:700;
+letter-spacing:.08em;
+font-size:15px;
 }
 
 .navlinks{
-  display:flex;
-  gap:28px;
-  font-size:13px;
-  color:var(--muted);
+display:flex;
+gap:28px;
+font-size:13px;
+color:var(--muted);
 }
 
 .navlinks a:hover{
-  color:var(--ink);
+color:var(--ink);
 }
 
 /* HERO */
+
 .hero{
-  min-height:650px;
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:70px;
-  align-items:center;
-  padding:80px 0;
+min-height:650px;
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:70px;
+align-items:center;
+padding:80px 0;
 }
 
 .kicker{
-  font-size:12px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  color:var(--muted);
-  margin-bottom:22px;
+font-size:12px;
+letter-spacing:.2em;
+text-transform:uppercase;
+color:var(--muted);
+margin-bottom:22px;
 }
 
 h1{
-  font-size:clamp(58px,8vw,108px);
-  line-height:.9;
-  letter-spacing:-.06em;
-  margin:0 0 28px;
-  font-weight:600;
+font-size:clamp(58px,8vw,108px);
+line-height:.9;
+letter-spacing:-.06em;
+margin:0 0 28px;
+font-weight:600;
 }
 
 h1 span{
-  font-family:"Playfair Display",serif;
-  font-style:italic;
-  font-weight:500;
+font-family:"Playfair Display",serif;
+font-style:italic;
+font-weight:500;
 }
 
 .lead{
-  font-size:19px;
-  line-height:1.65;
-  color:var(--muted);
-  max-width:600px;
-  margin:0 0 34px;
+font-size:19px;
+line-height:1.65;
+color:var(--muted);
+max-width:600px;
+margin:0 0 34px;
 }
 
 .buttons{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
+display:flex;
+gap:12px;
+flex-wrap:wrap;
 }
 
 .btn{
-  padding:14px 20px;
-  border:1px solid var(--ink);
-  font-size:13px;
-  font-weight:600;
-  transition:.2s;
+padding:14px 20px;
+border:1px solid var(--ink);
+font-size:13px;
+font-weight:600;
+transition:.2s;
 }
 
 .btn.primary{
-  background:var(--ink);
-  color:white;
+background:var(--ink);
+color:white;
 }
 
 .btn:hover{
-  transform:translateY(-2px);
+transform:translateY(-2px);
 }
 
 /* HERO ART */
+
 .hero-art{
-  aspect-ratio:1/1;
-  position:relative;
-  overflow:hidden;
-  background:#dedbd3;
+aspect-ratio:1/1;
+position:relative;
+overflow:hidden;
+background:#dedbd3;
 }
 
 .hero-art:before{
-  content:"";
-  position:absolute;
-  width:70%;
-  height:70%;
-  border-radius:50%;
-  background:#171717;
-  top:8%;
-  right:-8%;
+content:"";
+position:absolute;
+width:70%;
+height:70%;
+border-radius:50%;
+background:#171717;
+top:8%;
+right:-8%;
 }
 
 .hero-art:after{
-  content:"IBRAHEEM";
-  position:absolute;
-  font-size:clamp(40px,6vw,82px);
-  font-weight:700;
-  letter-spacing:-.08em;
-  transform:rotate(-90deg);
-  left:-22%;
-  bottom:23%;
-  color:#f5f3ee;
+content:"NWIHY";
+position:absolute;
+font-size:clamp(40px,6vw,82px);
+font-weight:700;
+letter-spacing:-.08em;
+transform:rotate(-90deg);
+left:-18%;
+bottom:25%;
+color:#f5f3ee;
 }
 
 /* SECTIONS */
+
 section{
-  padding:110px 0;
-  border-top:1px solid var(--line);
+padding:110px 0;
+border-top:1px solid var(--line);
 }
 
 .section-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  margin-bottom:42px;
+display:flex;
+justify-content:space-between;
+align-items:end;
+margin-bottom:42px;
 }
 
 .eyebrow{
-  font-size:12px;
-  text-transform:uppercase;
-  letter-spacing:.18em;
-  color:var(--muted);
+font-size:12px;
+text-transform:uppercase;
+letter-spacing:.18em;
+color:var(--muted);
 }
 
 h2{
-  font-size:clamp(36px,5vw,62px);
-  letter-spacing:-.05em;
-  margin:8px 0 0;
-  line-height:1;
+font-size:clamp(36px,5vw,62px);
+letter-spacing:-.05em;
+margin:8px 0 0;
+line-height:1;
 }
 
 /* WORK */
+
 .work-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
 }
 
 .work{
-  display:block;
+display:block;
 }
 
 .thumb{
-  aspect-ratio:16/10;
-  background:var(--card);
-  overflow:hidden;
-  position:relative;
+aspect-ratio:16/10;
+overflow:hidden;
+position:relative;
+background:#dedbd3;
 }
 
-.thumb .shape1{
-  position:absolute;
-  width:58%;
-  height:90%;
-  background:#171717;
-  right:-8%;
-  top:-15%;
-  transform:rotate(17deg);
+.thumb .orb{
+position:absolute;
+width:55%;
+aspect-ratio:1;
+border-radius:50%;
+right:-10%;
+top:-20%;
+background:#171717;
 }
 
-.thumb .shape2{
-  position:absolute;
-  width:42%;
-  height:42%;
-  border:2px solid #171717;
-  border-radius:50%;
-  left:10%;
-  bottom:12%;
+.thumb .bar{
+position:absolute;
+width:62%;
+height:18%;
+left:9%;
+bottom:18%;
+background:#171717;
+transform:rotate(-8deg);
 }
 
 .thumb .num{
-  position:absolute;
-  left:22px;
-  top:18px;
-  font-size:12px;
-  letter-spacing:.12em;
+position:absolute;
+left:22px;
+top:18px;
+font-size:12px;
+letter-spacing:.12em;
+z-index:2;
 }
 
 .work:nth-child(2) .thumb{
-  background:#dedbd3;
+background:#dfe5dc;
 }
 
-.work:nth-child(2) .shape1{
-  left:-8%;
-  right:auto;
-  transform:rotate(-17deg);
+.work:nth-child(2) .orb{
+background:#68776f;
+right:10%;
+top:12%;
+width:38%;
 }
 
-.work:nth-child(2) .shape2{
-  right:10%;
-  left:auto;
+.work:nth-child(2) .bar{
+background:#171717;
+transform:rotate(8deg);
+width:55%;
 }
 
 .work:nth-child(3) .thumb{
-  background:#e5e1d7;
+background:#d7d2c8;
 }
 
-.work:nth-child(3) .shape1{
-  width:32%;
-  height:125%;
-  right:32%;
-  top:-15%;
-  transform:rotate(35deg);
+.work:nth-child(3) .orb{
+width:75%;
+right:-25%;
+top:18%;
+background:#222;
+}
+
+.work:nth-child(3) .bar{
+width:48%;
+height:42%;
+left:14%;
+bottom:10%;
+background:#f5f3ee;
+transform:rotate(12deg);
 }
 
 .work:nth-child(4) .thumb{
-  background:#d8d5cd;
+background:#25211f;
 }
 
-.work:nth-child(4) .shape1{
-  width:75%;
-  height:45%;
-  right:-15%;
-  top:28%;
-  transform:rotate(-12deg);
+.work:nth-child(4) .orb{
+background:#d2b48c;
+width:46%;
+right:8%;
+top:8%;
 }
 
-.work:nth-child(5) .thumb{
-  background:#e9e6df;
-}
-
-.work:nth-child(5) .shape1{
-  width:45%;
-  height:45%;
-  right:12%;
-  top:12%;
-  border-radius:50%;
-  transform:none;
-}
-
-.work:nth-child(6) .thumb{
-  background:#dcd9d0;
-}
-
-.work:nth-child(6) .shape1{
-  width:20%;
-  height:130%;
-  right:42%;
-  top:-15%;
-  transform:rotate(-25deg);
+.work:nth-child(4) .bar{
+background:#f5f3ee;
+width:65%;
+bottom:24%;
+transform:rotate(-4deg);
 }
 
 .work-info{
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  padding:16px 2px 30px;
-  border-bottom:1px solid var(--line);
+display:flex;
+justify-content:space-between;
+gap:20px;
+padding:16px 2px 10px;
 }
 
 .work-title{
-  font-weight:600;
+font-weight:600;
+font-size:17px;
 }
 
 .work-type{
-  font-size:12px;
-  color:var(--muted);
+font-size:12px;
+color:var(--muted);
+}
+
+.work-desc{
+font-size:13px;
+color:var(--muted);
+margin:0 2px 30px;
+line-height:1.5;
 }
 
 /* ABOUT */
+
 .about{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:100px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:100px;
 }
 
 .about p{
-  font-size:21px;
-  line-height:1.65;
-  margin:0;
-  color:#333;
+font-size:21px;
+line-height:1.65;
+margin:0;
+color:#333;
 }
 
 .services{
-  display:grid;
-  gap:0;
+display:grid;
+gap:0;
 }
 
 .service{
-  display:flex;
-  justify-content:space-between;
-  border-top:1px solid var(--line);
-  padding:20px 0;
-  font-size:18px;
+display:flex;
+justify-content:space-between;
+border-top:1px solid var(--line);
+padding:20px 0;
+font-size:18px;
 }
 
 .service:last-child{
-  border-bottom:1px solid var(--line);
+border-bottom:1px solid var(--line);
 }
 
 /* CONTACT */
-.contact{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:80px;
-}
 
-.contact h2{
-  max-width:600px;
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
 }
 
 .socials{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  border-top:1px solid var(--line);
+display:grid;
+grid-template-columns:1fr 1fr;
+border-top:1px solid var(--line);
 }
 
 .socials a{
-  padding:18px 0;
-  border-bottom:1px solid var(--line);
-  font-size:14px;
+padding:18px 0;
+border-bottom:1px solid var(--line);
+font-size:14px;
 }
 
 .socials a:hover{
-  text-decoration:underline;
+text-decoration:underline;
 }
 
 /* FOOTER */
+
 footer{
-  padding:28px 0;
-  display:flex;
-  justify-content:space-between;
-  color:var(--muted);
-  font-size:12px;
+padding:28px 0;
+display:flex;
+justify-content:space-between;
+color:var(--muted);
+font-size:12px;
 }
 
 /* MOBILE */
+
 @media(max-width:800px){
 
-  .wrap{
-    width:min(100% - 30px,1180px);
-  }
+.wrap{
+width:min(100% - 30px,1180px);
+}
 
-  nav{
-    height:70px;
-  }
+nav{
+height:70px;
+}
 
-  .navlinks{
-    display:none;
-  }
+.navlinks{
+display:none;
+}
 
-  .hero{
-    grid-template-columns:1fr;
-    padding:65px 0;
-    gap:45px;
-  }
+.hero{
+grid-template-columns:1fr;
+padding:65px 0;
+gap:45px;
+}
 
-  .hero-art{
-    max-width:500px;
-  }
+.hero-art{
+max-width:500px;
+}
 
-  .work-grid,
-  .about,
-  .contact{
-    grid-template-columns:1fr;
-    gap:45px;
-  }
+.work-grid,
+.about,
+.contact{
+grid-template-columns:1fr;
+gap:45px;
+}
 
-  .about{
-    gap:35px;
-  }
+.about{
+gap:35px;
+}
 
-  section{
-    padding:75px 0;
-  }
+section{
+padding:75px 0;
+}
 
-  .section-head{
-    display:block;
-  }
+.section-head{
+display:block;
+}
 
-  .section-head .eyebrow{
-    display:block;
-    margin-bottom:18px;
-  }
+.section-head .eyebrow{
+display:block;
+margin-bottom:18px;
+}
 
-  h1{
-    font-size:clamp(54px,16vw,88px);
-  }
+h1{
+font-size:clamp(54px,16vw,88px);
+}
 
-  .lead{
-    font-size:17px;
-  }
+.lead{
+font-size:17px;
+}
 
-  footer{
-    display:block;
-  }
+footer{
+display:block;
+}
 
-  .footer-right{
-    margin-top:8px;
-  }
+.footer-right{
+margin-top:8px;
+}
+
 }
 </style>
 </head>
@@ -455,419 +459,386 @@ footer{
 
 <div class="wrap">
 
-<!-- NAV -->
 <nav>
-  <a class="logo" href="#">IBRAHEEM NWIHY</a>
 
-  <div class="navlinks">
-    <a href="#work">Work</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
+<a class="logo" href="#">
+IBRAHEEM NWIHY
+</a>
+
+<div class="navlinks">
+<a href="#work">Work</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+
 </nav>
 
 
-<!-- HERO -->
 <header class="hero">
 
-  <div>
+<div>
 
-    <div class="kicker">
-      Graphic Designer · Egypt
-    </div>
+<div class="kicker">
+Graphic Designer · Egypt
+</div>
 
-    <h1>
-      Hello, I’m <span>Ibraheem.</span>
-    </h1>
+<h1>
+Hello, I’m <span>Ibraheem.</span>
+</h1>
 
-    <p class="lead">
-      I create clear, memorable visual identities and digital designs
-      that turn ideas into visual stories.
-    </p>
+<p class="lead">
+I create clear, memorable visual identities and digital designs
+that turn ideas into visual stories.
+</p>
 
-    <div class="buttons">
+<div class="buttons">
 
-      <a
-        class="btn primary"
-        href="https://www.behance.net/ibraheemnuwahi"
-        target="_blank"
-        rel="noopener">
-        View Behance ↗
-      </a>
+<a
+class="btn primary"
+href="https://www.behance.net/ibraheemnuwahi"
+target="_blank"
+rel="noopener">
+View Behance ↗
+</a>
 
-      <a
-        class="btn"
-        href="mailto:em944991@gmail.com">
-        Start a project
-      </a>
+<a
+class="btn"
+href="mailto:em944991@gmail.com">
+Start a project
+</a>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
-  <div
-    class="hero-art"
-    aria-label="Ibraheem Nwihy graphic design visual">
-  </div>
+<div class="hero-art"></div>
 
 </header>
 
 
-<!-- WORK -->
 <section id="work">
 
-  <div class="section-head">
+<div class="section-head">
 
-    <div>
-      <div class="eyebrow">
-        Selected work
-      </div>
+<div>
 
-      <h2>
-        Visual work.
-      </h2>
-    </div>
+<div class="eyebrow">
+Selected work
+</div>
 
-    <div class="eyebrow">
-      2020 — 2026
-    </div>
+<h2>
+Recent projects.
+</h2>
 
-  </div>
+</div>
 
+<div class="eyebrow">
+2026
+</div>
 
-  <div class="work-grid">
+</div>
 
 
-    <a
-      class="work"
-      href="https://www.behance.net/ibraheemnuwahi"
-      target="_blank"
-      rel="noopener">
+<div class="work-grid">
 
-      <div class="thumb">
 
-        <span class="num">01</span>
+<a
+class="work"
+href="https://www.behance.net/gallery/255726791/NOVA-Fitness-App-UIUX-Case-Study"
+target="_blank"
+rel="noopener">
 
-        <i class="shape1"></i>
-        <i class="shape2"></i>
+<div class="thumb">
 
-      </div>
+<span class="num">
+01
+</span>
 
-      <div class="work-info">
+<i class="orb"></i>
+<i class="bar"></i>
 
-        <span class="work-title">
-          Brand Identity
-        </span>
+</div>
 
-        <span class="work-type">
-          Branding ↗
-        </span>
+<div class="work-info">
 
-      </div>
+<span class="work-title">
+NOVA
+</span>
 
-    </a>
+<span class="work-type">
+UI / UX ↗
+</span>
 
+</div>
 
-    <a
-      class="work"
-      href="https://www.behance.net/ibraheemnuwahi"
-      target="_blank"
-      rel="noopener">
+<p class="work-desc">
+Fitness mobile app concept focused on workouts,
+nutrition, progress and motivation.
+</p>
 
-      <div class="thumb">
+</a>
 
-        <span class="num">02</span>
 
-        <i class="shape1"></i>
-        <i class="shape2"></i>
+<a
+class="work"
+href="https://www.behance.net/gallery/255726681/Mindfully-Wellness-App-UIUX-Case-Study"
+target="_blank"
+rel="noopener">
 
-      </div>
+<div class="thumb">
 
-      <div class="work-info">
+<span class="num">
+02
+</span>
 
-        <span class="work-title">
-          Campaign Design
-        </span>
+<i class="orb"></i>
+<i class="bar"></i>
 
-        <span class="work-type">
-          Art Direction ↗
-        </span>
+</div>
 
-      </div>
+<div class="work-info">
 
-    </a>
+<span class="work-title">
+Mindfully
+</span>
 
+<span class="work-type">
+UI / UX ↗
+</span>
 
-    <a
-      class="work"
-      href="https://www.behance.net/ibraheemnuwahi"
-      target="_blank"
-      rel="noopener">
+</div>
 
-      <div class="thumb">
+<p class="work-desc">
+Wellness app concept designed around mindfulness,
+habits, sleep and everyday focus.
+</p>
 
-        <span class="num">03</span>
+</a>
 
-        <i class="shape1"></i>
-        <i class="shape2"></i>
 
-      </div>
+<a
+class="work"
+href="https://www.behance.net/gallery/255726443/TERRALUX-Outdoor-Advertising-Campaign"
+target="_blank"
+rel="noopener">
 
-      <div class="work-info">
+<div class="thumb">
 
-        <span class="work-title">
-          Social Media
-        </span>
+<span class="num">
+03
+</span>
 
-        <span class="work-type">
-          Digital Design ↗
-        </span>
+<i class="orb"></i>
+<i class="bar"></i>
 
-      </div>
+</div>
 
-    </a>
+<div class="work-info">
 
+<span class="work-title">
+TERRALUX
+</span>
 
-    <a
-      class="work"
-      href="https://www.behance.net/ibraheemnuwahi"
-      target="_blank"
-      rel="noopener">
+<span class="work-type">
+Campaign ↗
+</span>
 
-      <div class="thumb">
+</div>
 
-        <span class="num">04</span>
+<p class="work-desc">
+Outdoor advertising campaign for an outdoor gear brand,
+spanning posters and urban billboards.
+</p>
 
-        <i class="shape1"></i>
-        <i class="shape2"></i>
+</a>
 
-      </div>
 
-      <div class="work-info">
+<a
+class="work"
+href="https://www.behance.net/gallery/255726183/NOIRE-Luxury-Chocolate-Brand-Identity"
+target="_blank"
+rel="noopener">
 
-        <span class="work-title">
-          Visual Systems
-        </span>
+<div class="thumb">
 
-        <span class="work-type">
-          Graphic Design ↗
-        </span>
+<span class="num">
+04
+</span>
 
-      </div>
+<i class="orb"></i>
+<i class="bar"></i>
 
-    </a>
+</div>
 
+<div class="work-info">
 
-    <a
-      class="work"
-      href="https://www.behance.net/ibraheemnuwahi"
-      target="_blank"
-      rel="noopener">
+<span class="work-title">
+NOIRÉ
+</span>
 
-      <div class="thumb">
+<span class="work-type">
+Brand Identity ↗
+</span>
 
-        <span class="num">05</span>
+</div>
 
-        <i class="shape1"></i>
-        <i class="shape2"></i>
+<p class="work-desc">
+Luxury chocolate identity covering logo,
+packaging, social media and advertising direction.
+</p>
 
-      </div>
+</a>
 
-      <div class="work-info">
 
-        <span class="work-title">
-          Poster Design
-        </span>
-
-        <span class="work-type">
-          Print ↗
-        </span>
-
-      </div>
-
-    </a>
-
-
-    <a
-      class="work"
-      href="https://www.behance.net/ibraheemnuwahi"
-      target="_blank"
-      rel="noopener">
-
-      <div class="thumb">
-
-        <span class="num">06</span>
-
-        <i class="shape1"></i>
-        <i class="shape2"></i>
-
-      </div>
-
-      <div class="work-info">
-
-        <span class="work-title">
-          Creative Concepts
-        </span>
-
-        <span class="work-type">
-          Concept ↗
-        </span>
-
-      </div>
-
-    </a>
-
-  </div>
+</div>
 
 </section>
 
 
-<!-- ABOUT -->
 <section id="about">
 
-  <div class="section-head">
+<div class="section-head">
 
-    <div>
+<div>
 
-      <div class="eyebrow">
-        About
-      </div>
+<div class="eyebrow">
+About
+</div>
 
-      <h2>
-        A designer<br>
-        with intent.
-      </h2>
+<h2>
+A designer<br>
+with intent.
+</h2>
 
-    </div>
+</div>
 
-  </div>
-
-
-  <div class="about">
-
-    <p>
-      I’m Ibraheem Nwihy, a graphic designer focused on building
-      visual work that feels simple, intentional and memorable.
-    </p>
+</div>
 
 
-    <div class="services">
+<div class="about">
 
-      <div class="service">
-        <span>01 — Brand Identity</span>
-        <span>↗</span>
-      </div>
+<p>
+I’m Ibraheem Nwihy, a graphic designer specializing in
+Branding, Social Media, Visual Design, and UI/UX.
+I create clean, engaging, and purposeful visual experiences.
+</p>
 
-      <div class="service">
-        <span>02 — Social Media Design</span>
-        <span>↗</span>
-      </div>
 
-      <div class="service">
-        <span>03 — Campaign & Art Direction</span>
-        <span>↗</span>
-      </div>
+<div class="services">
 
-      <div class="service">
-        <span>04 — Print & Digital Design</span>
-        <span>↗</span>
-      </div>
+<div class="service">
+<span>01 — Brand Identity</span>
+<span>↗</span>
+</div>
 
-    </div>
+<div class="service">
+<span>02 — Social Media Design</span>
+<span>↗</span>
+</div>
 
-  </div>
+<div class="service">
+<span>03 — Campaign & Art Direction</span>
+<span>↗</span>
+</div>
+
+<div class="service">
+<span>04 — UI / UX Design</span>
+<span>↗</span>
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- CONTACT -->
 <section id="contact">
 
-  <div class="contact">
+<div class="contact">
 
-    <div>
+<div>
 
-      <div class="eyebrow">
-        Let’s work together
-      </div>
+<div class="eyebrow">
+Let’s work together
+</div>
 
-      <h2>
-        Have an idea?<br>
-        Let’s make it visual.
-      </h2>
+<h2>
+Have an idea?<br>
+Let’s make it visual.
+</h2>
 
-    </div>
+</div>
 
 
-    <div class="socials">
+<div class="socials">
 
-      <a
-        href="https://www.behance.net/ibraheemnuwahi"
-        target="_blank"
-        rel="noopener">
-        Behance ↗
-      </a>
+<a
+href="https://www.behance.net/ibraheemnuwahi"
+target="_blank"
+rel="noopener">
+Behance ↗
+</a>
 
-      <a
-        href="https://www.instagram.com/ibraheem_abdelhafez/"
-        target="_blank"
-        rel="noopener">
-        Instagram ↗
-      </a>
+<a
+href="https://www.instagram.com/ibraheem_abdelhafez/"
+target="_blank"
+rel="noopener">
+Instagram ↗
+</a>
 
-      <a
-        href="https://www.linkedin.com/in/ibraheem-nwihy-3331b7296/"
-        target="_blank"
-        rel="noopener">
-        LinkedIn ↗
-      </a>
+<a
+href="https://www.linkedin.com/in/ibraheem-nwihy-3331b7296/"
+target="_blank"
+rel="noopener">
+LinkedIn ↗
+</a>
 
-      <a
-        href="https://www.facebook.com/ibrahem3b7afez/"
-        target="_blank"
-        rel="noopener">
-        Facebook ↗
-      </a>
+<a
+href="https://www.facebook.com/ibrahem3b7afez/"
+target="_blank"
+rel="noopener">
+Facebook ↗
+</a>
 
-      <a
-        href="https://www.tiktok.com/@h_2281"
-        target="_blank"
-        rel="noopener">
-        TikTok ↗
-      </a>
+<a
+href="https://www.tiktok.com/@h_2281"
+target="_blank"
+rel="noopener">
+TikTok ↗
+</a>
 
-      <a
-        href="https://wa.me/201554574243"
-        target="_blank"
-        rel="noopener">
-        WhatsApp ↗
-      </a>
+<a
+href="https://wa.me/201554574243"
+target="_blank"
+rel="noopener">
+WhatsApp ↗
+</a>
 
-      <a href="mailto:em944991@gmail.com">
-        Email ↗
-      </a>
+<a href="mailto:em944991@gmail.com">
+Email ↗
+</a>
 
-      <a href="tel:+201554574243">
-        Phone ↗
-      </a>
+<a href="tel:+201554574243">
+Phone ↗
+</a>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
 
-<!-- FOOTER -->
 <footer>
 
-  <span>
-    © 2026 Ibraheem Nwihy
-  </span>
+<span>
+© 2026 Ibraheem Nwihy
+</span>
 
-  <span class="footer-right">
-    Graphic Designer · Egypt
-  </span>
+<span class="footer-right">
+Graphic Designer · Egypt
+</span>
 
 </footer>
 
