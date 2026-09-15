@@ -3,38 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ibraheem Nwihy — Graphic Designer">
+<meta name="description" content="Ibraheem Nwihy — Graphic Designer creating visual identities, campaigns and digital experiences.">
+<meta name="author" content="Ibraheem Nwihy">
+<meta name="theme-color" content="#f5f3ee">
 <title>Ibraheem Nwihy — Graphic Designer</title>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
+<style>
 :root{
-  --ink:#111820;
-  --muted:#66707b;
-  --paper:#f6f5f1;
-  --line:#deded8;
+  --bg:#f5f3ee;
+  --ink:#171717;
+  --muted:#6d6b66;
+  --line:#d9d5cc;
+  --card:#ebe8e0;
 }
 
 *{box-sizing:border-box}
+
 html{scroll-behavior:smooth}
 
 body{
   margin:0;
-  background:var(--paper);
+  background:var(--bg);
   color:var(--ink);
-  font-family:"DM Sans",Arial,sans-serif;
+  font-family:"DM Sans",sans-serif;
 }
 
-a{color:inherit}
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-.container{
+.wrap{
   width:min(1180px,calc(100% - 48px));
   margin:auto;
 }
 
 /* NAV */
-.nav{
+nav{
   height:82px;
   display:flex;
   align-items:center;
@@ -42,481 +51,401 @@ a{color:inherit}
   border-bottom:1px solid var(--line);
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:15px;
-  text-decoration:none;
-}
-
-.mark{
-  font-family:Georgia,serif;
+.logo{
   font-weight:700;
-  font-size:26px;
-  letter-spacing:-3px;
+  letter-spacing:.08em;
+  font-size:15px;
 }
 
-.divider{
-  width:1px;
-  height:28px;
-  background:#9da1a1;
-}
-
-.brandtext strong{
-  display:block;
-  font-family:Manrope,sans-serif;
-  font-size:14px;
-  letter-spacing:.12em;
-}
-
-.brandtext span{
-  font-size:10px;
-  letter-spacing:.16em;
+.navlinks{
+  display:flex;
+  gap:28px;
+  font-size:13px;
   color:var(--muted);
 }
 
-.menu{
-  display:flex;
-  gap:32px;
-  font-size:12px;
-  text-transform:uppercase;
-  letter-spacing:.1em;
+.navlinks a:hover{
+  color:var(--ink);
 }
-
-.menu a{text-decoration:none}
 
 /* HERO */
 .hero{
-  min-height:570px;
+  min-height:650px;
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1.2fr .8fr;
+  gap:70px;
   align-items:center;
-  gap:50px;
-  padding:55px 0 65px;
+  padding:80px 0;
 }
 
-.eyebrow{
-  font-size:13px;
-  color:#8a8d8b;
-  margin-bottom:16px;
+.kicker{
+  font-size:12px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:22px;
 }
 
 h1{
-  font-family:Manrope,sans-serif;
-  font-size:clamp(54px,7vw,92px);
+  font-size:clamp(58px,8vw,108px);
   line-height:.9;
-  letter-spacing:-.07em;
-  margin:0 0 25px;
+  letter-spacing:-.06em;
+  margin:0 0 28px;
+  font-weight:600;
 }
 
 h1 span{
-  font-weight:400;
-  color:transparent;
-  -webkit-text-stroke:1px var(--ink);
+  font-family:"Playfair Display",serif;
+  font-style:italic;
+  font-weight:500;
 }
 
 .lead{
-  font-size:20px;
-  line-height:1.35;
-  margin:0 0 15px;
-}
-
-.copy{
-  font-size:14px;
-  line-height:1.75;
+  font-size:19px;
+  line-height:1.65;
   color:var(--muted);
-  max-width:480px;
-  margin:0;
+  max-width:600px;
+  margin:0 0 34px;
 }
 
 .buttons{
   display:flex;
   gap:12px;
-  margin-top:28px;
   flex-wrap:wrap;
 }
 
 .btn{
-  display:inline-flex;
-  align-items:center;
-  gap:28px;
-  text-decoration:none;
-  padding:14px 18px;
+  padding:14px 20px;
   border:1px solid var(--ink);
-  border-radius:8px;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:.06em;
-  text-transform:uppercase;
+  font-size:13px;
+  font-weight:600;
+  transition:.2s;
 }
 
-.btn.dark{
+.btn.primary{
   background:var(--ink);
   color:white;
 }
 
-/* HERO VISUAL */
-.heroart{
-  height:460px;
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.btn:hover{
+  transform:translateY(-2px);
 }
 
-.photo{
-  width:76%;
-  height:92%;
-  border-radius:160px 160px 20px 20px;
+/* HERO ART */
+.hero-art{
+  aspect-ratio:1/1;
+  position:relative;
   overflow:hidden;
-  background:
-    linear-gradient(135deg,#d8d6cf 0 34%,transparent 34% 39%,#dedcd5 39% 67%,transparent 67%),
-    linear-gradient(150deg,#f0eee7,#c8c6be 55%,#e4e1d8);
-  position:relative;
+  background:#dedbd3;
 }
 
-.photo:before{
+.hero-art:before{
   content:"";
   position:absolute;
-  width:62%;
-  height:76%;
-  left:18%;
-  bottom:0;
-  border-radius:48% 48% 10% 10%;
-  background:linear-gradient(120deg,#252b31,#0d1217 65%,#3a3e40);
+  width:70%;
+  height:70%;
+  border-radius:50%;
+  background:#171717;
+  top:8%;
+  right:-8%;
 }
 
-.photo:after{
-  content:"IN";
+.hero-art:after{
+  content:"IBRAHEEM";
   position:absolute;
-  right:10%;
-  bottom:15%;
-  font-family:Georgia,serif;
-  font-size:50px;
-  color:#e7e4db;
-  letter-spacing:-7px;
-}
-
-.shape{
-  position:absolute;
-  width:130px;
-  height:130px;
-  border:1px solid #c9c8c1;
-  right:0;
-  top:50px;
-  transform:rotate(45deg);
-}
-
-.note{
-  position:absolute;
-  right:-5px;
-  bottom:40px;
-  writing-mode:vertical-rl;
-  color:#7d817e;
-  font-family:Georgia,serif;
-  font-style:italic;
-  font-size:18px;
+  font-size:clamp(40px,6vw,82px);
+  font-weight:700;
+  letter-spacing:-.08em;
+  transform:rotate(-90deg);
+  left:-22%;
+  bottom:23%;
+  color:#f5f3ee;
 }
 
 /* SECTIONS */
-.section{
-  padding:82px 0;
+section{
+  padding:110px 0;
   border-top:1px solid var(--line);
 }
 
-.sectionhead{
+.section-head{
   display:flex;
-  align-items:end;
   justify-content:space-between;
-  margin-bottom:30px;
+  align-items:end;
+  margin-bottom:42px;
 }
 
-.kicker{
-  font-size:11px;
-  color:#8b8e8b;
-  letter-spacing:.16em;
+.eyebrow{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:var(--muted);
 }
 
 h2{
-  font-family:Manrope,sans-serif;
-  font-size:48px;
+  font-size:clamp(36px,5vw,62px);
   letter-spacing:-.05em;
   margin:8px 0 0;
-}
-
-h2 span{
-  font-weight:400;
-  color:#8d9291;
-}
-
-.all{
-  font-size:11px;
-  text-decoration:none;
-  letter-spacing:.08em;
-  text-transform:uppercase;
+  line-height:1;
 }
 
 /* WORK */
-.grid{
+.work-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:34px 22px;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
 }
 
-.card{
-  text-decoration:none;
+.work{
+  display:block;
 }
 
 .thumb{
-  height:265px;
-  border-radius:9px;
+  aspect-ratio:16/10;
+  background:var(--card);
   overflow:hidden;
   position:relative;
-  background:#deddd7;
 }
 
-.thumb:before{
-  content:"";
+.thumb .shape1{
   position:absolute;
-  inset:10% 12%;
-  background:linear-gradient(135deg,#2a2e32,#15191d);
-  box-shadow:0 20px 35px #0002;
-  transform:rotate(-4deg);
+  width:58%;
+  height:90%;
+  background:#171717;
+  right:-8%;
+  top:-15%;
+  transform:rotate(17deg);
 }
 
-.thumb:after{
-  content:"";
+.thumb .shape2{
   position:absolute;
-  inset:0;
-  background:linear-gradient(125deg,transparent 45%,#fff6 46% 48%,transparent 49%);
+  width:42%;
+  height:42%;
+  border:2px solid #171717;
+  border-radius:50%;
+  left:10%;
+  bottom:12%;
 }
 
-.card:nth-child(2) .thumb{background:#e5e1d9}
-.card:nth-child(2) .thumb:before{
-  inset:8% 26%;
-  transform:none;
-  background:#181d22;
-}
-
-.card:nth-child(3) .thumb{background:#ddd9cf}
-.card:nth-child(3) .thumb:before{
-  inset:18% 16%;
-  transform:rotate(7deg);
-  border-radius:10px;
-}
-
-.card:nth-child(4) .thumb{background:#d8ddd8}
-.card:nth-child(4) .thumb:before{
-  inset:18% 24%;
-  transform:rotate(-8deg);
-  border-radius:20px;
-  background:#161b20;
-}
-
-.card:nth-child(5) .thumb{background:#d4d8d4}
-.card:nth-child(5) .thumb:before{
-  inset:24% 8%;
-  transform:none;
-  background:#20262b;
-}
-
-.card:nth-child(6) .thumb{background:#ebe9e3}
-.card:nth-child(6) .thumb:before{
-  inset:24%;
-  transform:none;
-  background:transparent;
-  border:3px solid #1b2025;
-  box-shadow:none;
-}
-
-.cardtag{
-  font-size:10px;
-  letter-spacing:.12em;
-  color:#7b807f;
-  margin-top:15px;
-  text-transform:uppercase;
-}
-
-.card h3{
-  font-family:Manrope,sans-serif;
-  font-size:17px;
-  margin:7px 0 4px;
-}
-
-.card p{
+.thumb .num{
+  position:absolute;
+  left:22px;
+  top:18px;
   font-size:12px;
-  color:var(--muted);
-  margin:0;
+  letter-spacing:.12em;
 }
 
-.cardline{
+.work:nth-child(2) .thumb{
+  background:#dedbd3;
+}
+
+.work:nth-child(2) .shape1{
+  left:-8%;
+  right:auto;
+  transform:rotate(-17deg);
+}
+
+.work:nth-child(2) .shape2{
+  right:10%;
+  left:auto;
+}
+
+.work:nth-child(3) .thumb{
+  background:#e5e1d7;
+}
+
+.work:nth-child(3) .shape1{
+  width:32%;
+  height:125%;
+  right:32%;
+  top:-15%;
+  transform:rotate(35deg);
+}
+
+.work:nth-child(4) .thumb{
+  background:#d8d5cd;
+}
+
+.work:nth-child(4) .shape1{
+  width:75%;
+  height:45%;
+  right:-15%;
+  top:28%;
+  transform:rotate(-12deg);
+}
+
+.work:nth-child(5) .thumb{
+  background:#e9e6df;
+}
+
+.work:nth-child(5) .shape1{
+  width:45%;
+  height:45%;
+  right:12%;
+  top:12%;
+  border-radius:50%;
+  transform:none;
+}
+
+.work:nth-child(6) .thumb{
+  background:#dcd9d0;
+}
+
+.work:nth-child(6) .shape1{
+  width:20%;
+  height:130%;
+  right:42%;
+  top:-15%;
+  transform:rotate(-25deg);
+}
+
+.work-info{
   display:flex;
   justify-content:space-between;
-  align-items:center;
+  gap:20px;
+  padding:16px 2px 30px;
+  border-bottom:1px solid var(--line);
 }
 
-.arrow{font-size:20px}
+.work-title{
+  font-weight:600;
+}
+
+.work-type{
+  font-size:12px;
+  color:var(--muted);
+}
 
 /* ABOUT */
 .about{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:70px;
+  gap:100px;
 }
 
 .about p{
-  font-size:17px;
-  line-height:1.75;
-  color:#4f5962;
+  font-size:21px;
+  line-height:1.65;
   margin:0;
+  color:#333;
 }
 
 .services{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  border-top:1px solid var(--line);
+  gap:0;
 }
 
 .service{
-  padding:22px 0;
-  border-bottom:1px solid var(--line);
-  font-size:13px;
+  display:flex;
+  justify-content:space-between;
+  border-top:1px solid var(--line);
+  padding:20px 0;
+  font-size:18px;
 }
 
-.service span{
-  float:right;
-  color:#9a9d9b;
+.service:last-child{
+  border-bottom:1px solid var(--line);
 }
 
 /* CONTACT */
-.connect{
+.contact{
   display:grid;
-  grid-template-columns:1fr 2fr;
-  gap:70px;
-  align-items:start;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
 }
 
-.connect h2{font-size:54px}
+.contact h2{
+  max-width:600px;
+}
 
 .socials{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.social{
-  padding:20px 0;
+  grid-template-columns:1fr 1fr;
   border-top:1px solid var(--line);
-  text-decoration:none;
 }
 
-.social b{
-  display:block;
-  font-size:15px;
-  margin-bottom:5px;
+.socials a{
+  padding:18px 0;
+  border-bottom:1px solid var(--line);
+  font-size:14px;
 }
 
-.social span{
-  font-size:11px;
-  color:var(--muted);
+.socials a:hover{
+  text-decoration:underline;
 }
 
 /* FOOTER */
 footer{
-  border-top:1px solid var(--line);
-  padding:22px 0 30px;
+  padding:28px 0;
   display:flex;
   justify-content:space-between;
-  color:#777c7c;
-  font-size:10px;
-  letter-spacing:.08em;
+  color:var(--muted);
+  font-size:12px;
 }
 
 /* MOBILE */
 @media(max-width:800px){
 
-  .container{
-    width:min(100% - 30px,620px);
+  .wrap{
+    width:min(100% - 30px,1180px);
   }
 
-  .menu{gap:12px}
+  nav{
+    height:70px;
+  }
 
-  .menu a:nth-child(2),
-  .menu a:nth-child(3){
+  .navlinks{
     display:none;
   }
 
   .hero{
     grid-template-columns:1fr;
-    padding-top:45px;
+    padding:65px 0;
+    gap:45px;
   }
 
-  .heroart{
-    height:380px;
-    order:-1;
+  .hero-art{
+    max-width:500px;
   }
 
-  .photo{
-    width:72%;
-    height:90%;
-  }
-
-  .grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .thumb{
-    height:220px;
-  }
-
+  .work-grid,
   .about,
-  .connect{
+  .contact{
     grid-template-columns:1fr;
-    gap:30px;
+    gap:45px;
   }
 
-  .socials{
-    grid-template-columns:1fr 1fr;
-  }
-}
-
-@media(max-width:520px){
-
-  .grid{
-    grid-template-columns:1fr;
+  .about{
+    gap:35px;
   }
 
-  .thumb{
-    height:270px;
+  section{
+    padding:75px 0;
   }
 
-  h2{
-    font-size:38px;
+  .section-head{
+    display:block;
   }
 
-  .connect h2{
-    font-size:44px;
+  .section-head .eyebrow{
+    display:block;
+    margin-bottom:18px;
   }
 
-  .nav{
-    height:70px;
+  h1{
+    font-size:clamp(54px,16vw,88px);
   }
 
-  .brandtext strong{
-    font-size:12px;
-  }
-
-  .heroart{
-    height:330px;
-  }
-
-  .photo{
-    width:76%;
+  .lead{
+    font-size:17px;
   }
 
   footer{
-    gap:20px;
-    flex-direction:column;
+    display:block;
+  }
+
+  .footer-right{
+    margin-top:8px;
   }
 }
 </style>
@@ -524,370 +453,421 @@ footer{
 
 <body>
 
-<div class="container">
+<div class="wrap">
 
 <!-- NAV -->
-<nav class="nav">
+<nav>
+  <a class="logo" href="#">IBRAHEEM NWIHY</a>
 
-<a class="brand" href="#">
-<div class="mark">IN</div>
-<div class="divider"></div>
-
-<div class="brandtext">
-<strong>IBRAHEEM NWIHY</strong>
-<span>GRAPHIC DESIGNER</span>
-</div>
-</a>
-
-<div class="menu">
-<a href="#home">Home</a>
-<a href="#work">Work</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</div>
-
+  <div class="navlinks">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
 
 <!-- HERO -->
-<section class="hero" id="home">
+<header class="hero">
 
-<div>
+  <div>
 
-<div class="eyebrow">Hello, I’m</div>
+    <div class="kicker">
+      Graphic Designer · Egypt
+    </div>
 
-<h1>
-IBRAHEEM<br>
-<span>NWIHY</span>
-</h1>
+    <h1>
+      Hello, I’m <span>Ibraheem.</span>
+    </h1>
 
-<p class="lead">
-Creative Designer<br>
-Turning Ideas Into Visual Stories.
-</p>
+    <p class="lead">
+      I create clear, memorable visual identities and digital designs
+      that turn ideas into visual stories.
+    </p>
 
-<p class="copy">
-I’m a graphic designer focused on branding, visual identity and digital design.
-I create clear, memorable visuals that make an impact.
-</p>
+    <div class="buttons">
 
-<div class="buttons">
+      <a
+        class="btn primary"
+        href="https://www.behance.net/ibraheemnuwahi"
+        target="_blank"
+        rel="noopener">
+        View Behance ↗
+      </a>
 
-<a class="btn dark"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
-View My Work <b>→</b>
-</a>
+      <a
+        class="btn"
+        href="mailto:em944991@gmail.com">
+        Start a project
+      </a>
 
-<a class="btn"
-href="mailto:em944991@gmail.com">
-Get In Touch <b>→</b>
-</a>
+    </div>
 
-</div>
+  </div>
 
-</div>
+  <div
+    class="hero-art"
+    aria-label="Ibraheem Nwihy graphic design visual">
+  </div>
 
-
-<div class="heroart">
-
-<div class="shape"></div>
-
-<div class="photo"></div>
-
-<div class="note">
-Design · Build · Create
-</div>
-
-</div>
-
-</section>
+</header>
 
 
 <!-- WORK -->
-<section class="section" id="work">
+<section id="work">
 
-<div class="sectionhead">
+  <div class="section-head">
 
-<div>
-<div class="kicker">01</div>
-<h2>SELECTED <span>WORK</span></h2>
-</div>
+    <div>
+      <div class="eyebrow">
+        Selected work
+      </div>
 
-<a class="all"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
-View all projects →
-</a>
+      <h2>
+        Visual work.
+      </h2>
+    </div>
 
-</div>
+    <div class="eyebrow">
+      2020 — 2026
+    </div>
 
-
-<div class="grid">
-
-<a class="card"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
-
-<div class="thumb"></div>
-
-<div class="cardtag">Branding</div>
-
-<div class="cardline">
-<div>
-<h3>Brand Identity</h3>
-<p>Visual Identity System</p>
-</div>
-<span class="arrow">→</span>
-</div>
-
-</a>
+  </div>
 
 
-<a class="card"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
-
-<div class="thumb"></div>
-
-<div class="cardtag">Poster Design</div>
-
-<div class="cardline">
-<div>
-<h3>Typography Poster</h3>
-<p>Visual Communication</p>
-</div>
-<span class="arrow">→</span>
-</div>
-
-</a>
+  <div class="work-grid">
 
 
-<a class="card"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
+    <a
+      class="work"
+      href="https://www.behance.net/ibraheemnuwahi"
+      target="_blank"
+      rel="noopener">
 
-<div class="thumb"></div>
+      <div class="thumb">
 
-<div class="cardtag">Packaging</div>
+        <span class="num">01</span>
 
-<div class="cardline">
-<div>
-<h3>Packaging Design</h3>
-<p>Product Visual Direction</p>
-</div>
-<span class="arrow">→</span>
-</div>
+        <i class="shape1"></i>
+        <i class="shape2"></i>
 
-</a>
+      </div>
 
+      <div class="work-info">
 
-<a class="card"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
+        <span class="work-title">
+          Brand Identity
+        </span>
 
-<div class="thumb"></div>
+        <span class="work-type">
+          Branding ↗
+        </span>
 
-<div class="cardtag">UI / UX</div>
+      </div>
 
-<div class="cardline">
-<div>
-<h3>Digital Experience</h3>
-<p>User Interface & Experience</p>
-</div>
-<span class="arrow">→</span>
-</div>
-
-</a>
+    </a>
 
 
-<a class="card"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
+    <a
+      class="work"
+      href="https://www.behance.net/ibraheemnuwahi"
+      target="_blank"
+      rel="noopener">
 
-<div class="thumb"></div>
+      <div class="thumb">
 
-<div class="cardtag">Outdoor</div>
+        <span class="num">02</span>
 
-<div class="cardline">
-<div>
-<h3>Billboard Campaign</h3>
-<p>Visual Identity in Real Life</p>
-</div>
-<span class="arrow">→</span>
-</div>
+        <i class="shape1"></i>
+        <i class="shape2"></i>
 
-</a>
+      </div>
+
+      <div class="work-info">
+
+        <span class="work-title">
+          Campaign Design
+        </span>
+
+        <span class="work-type">
+          Art Direction ↗
+        </span>
+
+      </div>
+
+    </a>
 
 
-<a class="card"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
+    <a
+      class="work"
+      href="https://www.behance.net/ibraheemnuwahi"
+      target="_blank"
+      rel="noopener">
 
-<div class="thumb"></div>
+      <div class="thumb">
 
-<div class="cardtag">Logo Design</div>
+        <span class="num">03</span>
 
-<div class="cardline">
-<div>
-<h3>Logo & Mark</h3>
-<p>Minimal Brand Symbol</p>
-</div>
-<span class="arrow">→</span>
-</div>
+        <i class="shape1"></i>
+        <i class="shape2"></i>
 
-</a>
+      </div>
 
-</div>
+      <div class="work-info">
+
+        <span class="work-title">
+          Social Media
+        </span>
+
+        <span class="work-type">
+          Digital Design ↗
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a
+      class="work"
+      href="https://www.behance.net/ibraheemnuwahi"
+      target="_blank"
+      rel="noopener">
+
+      <div class="thumb">
+
+        <span class="num">04</span>
+
+        <i class="shape1"></i>
+        <i class="shape2"></i>
+
+      </div>
+
+      <div class="work-info">
+
+        <span class="work-title">
+          Visual Systems
+        </span>
+
+        <span class="work-type">
+          Graphic Design ↗
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a
+      class="work"
+      href="https://www.behance.net/ibraheemnuwahi"
+      target="_blank"
+      rel="noopener">
+
+      <div class="thumb">
+
+        <span class="num">05</span>
+
+        <i class="shape1"></i>
+        <i class="shape2"></i>
+
+      </div>
+
+      <div class="work-info">
+
+        <span class="work-title">
+          Poster Design
+        </span>
+
+        <span class="work-type">
+          Print ↗
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a
+      class="work"
+      href="https://www.behance.net/ibraheemnuwahi"
+      target="_blank"
+      rel="noopener">
+
+      <div class="thumb">
+
+        <span class="num">06</span>
+
+        <i class="shape1"></i>
+        <i class="shape2"></i>
+
+      </div>
+
+      <div class="work-info">
+
+        <span class="work-title">
+          Creative Concepts
+        </span>
+
+        <span class="work-type">
+          Concept ↗
+        </span>
+
+      </div>
+
+    </a>
+
+  </div>
+
 </section>
 
 
 <!-- ABOUT -->
-<section class="section" id="about">
+<section id="about">
 
-<div class="sectionhead">
+  <div class="section-head">
 
-<div>
-<div class="kicker">02</div>
-<h2>ABOUT <span>ME</span></h2>
-</div>
+    <div>
 
-</div>
+      <div class="eyebrow">
+        About
+      </div>
+
+      <h2>
+        A designer<br>
+        with intent.
+      </h2>
+
+    </div>
+
+  </div>
 
 
-<div class="about">
+  <div class="about">
 
-<p>
-I believe good design should be simple, intentional and memorable.
-My work combines strong typography, visual systems and creative direction
-to turn ideas into visuals people remember.
-</p>
+    <p>
+      I’m Ibraheem Nwihy, a graphic designer focused on building
+      visual work that feels simple, intentional and memorable.
+    </p>
 
 
-<div class="services">
+    <div class="services">
 
-<div class="service">
-Brand Identity <span>01</span>
-</div>
+      <div class="service">
+        <span>01 — Brand Identity</span>
+        <span>↗</span>
+      </div>
 
-<div class="service">
-Graphic Design <span>02</span>
-</div>
+      <div class="service">
+        <span>02 — Social Media Design</span>
+        <span>↗</span>
+      </div>
 
-<div class="service">
-Social Media Design <span>03</span>
-</div>
+      <div class="service">
+        <span>03 — Campaign & Art Direction</span>
+        <span>↗</span>
+      </div>
 
-<div class="service">
-UI / UX Design <span>04</span>
-</div>
+      <div class="service">
+        <span>04 — Print & Digital Design</span>
+        <span>↗</span>
+      </div>
 
-<div class="service">
-Packaging <span>05</span>
-</div>
+    </div>
 
-<div class="service">
-Art Direction <span>06</span>
-</div>
+  </div>
 
-</div>
-
-</div>
 </section>
 
 
 <!-- CONTACT -->
-<section class="section" id="contact">
+<section id="contact">
 
-<div class="connect">
+  <div class="contact">
 
-<div>
+    <div>
 
-<div class="kicker">03</div>
+      <div class="eyebrow">
+        Let’s work together
+      </div>
 
-<h2>
-LET’S <span>CONNECT</span>
-</h2>
+      <h2>
+        Have an idea?<br>
+        Let’s make it visual.
+      </h2>
 
-<p style="color:#66707b;line-height:1.6;font-size:14px">
-Have a project in mind or just want to say hi?
-Feel free to reach out.
-</p>
-
-<a class="btn dark"
-href="mailto:em944991@gmail.com">
-Get In Touch <b>→</b>
-</a>
-
-</div>
+    </div>
 
 
-<div class="socials">
+    <div class="socials">
 
-<a class="social"
-href="https://www.behance.net/ibraheemnuwahi"
-target="_blank">
-<b>Behance</b>
-<span>View Portfolio ↗</span>
-</a>
+      <a
+        href="https://www.behance.net/ibraheemnuwahi"
+        target="_blank"
+        rel="noopener">
+        Behance ↗
+      </a>
 
-<a class="social"
-href="https://www.instagram.com/ibraheem_abdelhafez/"
-target="_blank">
-<b>Instagram</b>
-<span>Follow Me ↗</span>
-</a>
+      <a
+        href="https://www.instagram.com/ibraheem_abdelhafez/"
+        target="_blank"
+        rel="noopener">
+        Instagram ↗
+      </a>
 
-<a class="social"
-href="https://www.linkedin.com/in/ibraheem-nwihy-3331b7296/"
-target="_blank">
-<b>LinkedIn</b>
-<span>Connect ↗</span>
-</a>
+      <a
+        href="https://www.linkedin.com/in/ibraheem-nwihy-3331b7296/"
+        target="_blank"
+        rel="noopener">
+        LinkedIn ↗
+      </a>
 
-<a class="social"
-href="https://www.facebook.com/ibrahem3b7afez/"
-target="_blank">
-<b>Facebook</b>
-<span>Follow Me ↗</span>
-</a>
+      <a
+        href="https://www.facebook.com/ibrahem3b7afez/"
+        target="_blank"
+        rel="noopener">
+        Facebook ↗
+      </a>
 
-<a class="social"
-href="https://www.tiktok.com/@h_2281"
-target="_blank">
-<b>TikTok</b>
-<span>Follow Me ↗</span>
-</a>
+      <a
+        href="https://www.tiktok.com/@h_2281"
+        target="_blank"
+        rel="noopener">
+        TikTok ↗
+      </a>
 
-<a class="social"
-href="https://wa.me/201554574243"
-target="_blank">
-<b>WhatsApp</b>
-<span>Chat Now ↗</span>
-</a>
+      <a
+        href="https://wa.me/201554574243"
+        target="_blank"
+        rel="noopener">
+        WhatsApp ↗
+      </a>
 
-<a class="social"
-href="mailto:em944991@gmail.com">
-<b>Email</b>
-<span>em944991@gmail.com ↗</span>
-</a>
+      <a href="mailto:em944991@gmail.com">
+        Email ↗
+      </a>
 
-</div>
+      <a href="tel:+201554574243">
+        Phone ↗
+      </a>
 
-</div>
+    </div>
+
+  </div>
 
 </section>
 
 
+<!-- FOOTER -->
 <footer>
 
-<span>
-© 2026 IBRAHEEM NWIHY. ALL RIGHTS RESERVED.
-</span>
+  <span>
+    © 2026 Ibraheem Nwihy
+  </span>
 
-<span>
-DESIGN · CREATE · INSPIRE
-</span>
+  <span class="footer-right">
+    Graphic Designer · Egypt
+  </span>
 
 </footer>
 
